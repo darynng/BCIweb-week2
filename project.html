@@ -18,27 +18,36 @@
       align-items: center; /*vertically center child elements within the flex container*/
       justify-content: center; /*horizontally center child elements within the flex container*/
     }
+    .backgroundimage {
+    background-size: cover !important;
+    background: url(https://t3.ftcdn.net/jpg/02/43/26/34/360_F_243263456_aO0WpRUfBq1aupiBf0VPkmvnis4nyA9P.jpg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    opacity: 0.85;
+  }
   </style>
 </head>
 <body>
-
- <!-- Navbar -->
- <div class="navbar">
-  <a href="index.html"><b>Ralescu</b> Lab</a>
-  <div class="navbar-right">
-    <a href="index.html">Home</a>
-    <a href="pages/project.html">Project</a>
-    <div class="dropdown">
-      <a href="publication.html" class="dropbtn">Publication</a>
-      <div class="dropdown-content">
-        <a href="publication_neuroscience.html">Neuroscience</a>
-        <a href="publication_technology.html">Technology</a>
+  <!-- Navbar -->
+    <div class="navbar" style="background: linear-gradient(to right, #640c0c, #000)">
+      <a href="index.html"><b>Ralescu</b> Lab</a>
+      <div class="navbar-right">
+        <a href="index.html">Home</a>
+        <a href="project.html">Project</a>
+        <div class="dropdown">
+          <a href="publication.html" class="dropbtn">Publication</a>
+          <div class="dropdown-content">
+            <a href="publication.html">Neuroscience</a>
+            <a href="publication.html" style="margin-top: 4px;">Technology</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
-
+  <div class = "backgroundimage">
   <!-- BCI Content -->
   <div class="background-image">
     <div class="content">
@@ -82,7 +91,7 @@
   </div>
 
  <!-- Footer -->
- <footer class="w3-padding w3-center" style="background-color:#3f0e0e; color:#C6C6C6; width: 100%;">
+ <footer class="w3-padding w3-center" style="background-color:#0e0c0c; color:#C6C6C6; width: 100%;">
     <p style="font-weight:bold; color:white">Contact</p>
     <p>Ralescu Lab</p>
     <p>310 Mantei Center</p>
