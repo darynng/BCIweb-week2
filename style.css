@@ -24,11 +24,13 @@
     font-size: 17px;
   }
 
+
   .navbar a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
   }
+
 
   .navbar a:hover {
     color: rgb(173, 213, 250);
@@ -81,6 +83,12 @@
 
   .w3-xlarge { font-size: 20px; }
 
+  .slogan{
+    font-size: 28px; 
+    color:white; 
+    text-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;
+  }
+
   .overview {
     padding: 50px 20px;
     background-color: black;
@@ -103,7 +111,7 @@
     line-height: 1.6;
   }
   .gradient-text {
-    background: linear-gradient(to right, #bfbfed, #2e4dac);
+    background: linear-gradient(to right, #bfbfed, #4980ee);
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -112,12 +120,10 @@
     text-align: center;
     border-bottom: 1px solid lightgrey;
 }
-
   .projects-container h2 {
     padding: 16px;
     border-bottom: 1px solid lightgrey;
   }
-
   .project-grid {
     display: flex;
     justify-content: center;
@@ -125,7 +131,6 @@
     gap: 16px;
     margin-top: 32px;
   }
-
   .project-card {
       position: relative;
       background-color: white;
@@ -135,21 +140,18 @@
       height: 300px;
       margin: 50px;
   }
-
   .project-card img {
       width: 100%; /* To fill the container, no empty space is left in the container. */
       height: 100%;
       object-fit: cover; /* To maintains its original aspect ratio and is cropped as necessary to fill the container without distortion */
   }
-
   .project-card:hover img {
     width: 460px;
     height: 310px;
   }
-
   .project-details {
     position: absolute;
-    bottom: 0;
+    top: 34%;/* center the text in the middle of image*/
     width: 100%;
     color: white;
     padding: 16px;
@@ -164,6 +166,7 @@
     align-self: center;
   }
 
+  /*READ MORE BUTTON - NOT USED*/
   .read-more-button {
     color: white;
     padding: 10px 15px;
@@ -191,6 +194,7 @@
     align-items: center;
     margin-top: 60px; 
     margin-bottom: 0px;
+    margin-left: 120px;
     padding: 40px;
     max-width: 1400px;
     width: 100%; /*take up 100% width of parent element*/
@@ -203,6 +207,7 @@
     align-items: center;
     margin-top: 0px; 
     margin-bottom: 0px;
+    margin-left: 120px;
     padding: 40px;
     max-width: 1400px;
     width: 100%; /*take up 100% width of parent element*/
@@ -210,11 +215,11 @@
   }
 
   .text-content {
-    max-width: 60%;
+    max-width: 80%;
   }
 
   .project-title {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     color: #df3d3d;
   }
@@ -326,8 +331,8 @@ margin, position, padding-left, and font-size on .project-points li are not rele
 }
 
 .contact-image img {
-    width: 420px; /* To fill the container, no empty space is left in the container. */
-    height: 480px;
+    width: 400px; /* To fill the container, no empty space is left in the container. */
+    height: auto;
     object-fit: cover; /* To maintains its original aspect ratio and is cropped as necessary to fill the container without distortion */
 }
 
@@ -341,16 +346,14 @@ margin, position, padding-left, and font-size on .project-points li are not rele
   .team-member {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 380px;
     overflow: hidden;
     transition: border-width 0.3s;
   }
-  .team-member:hover {
-    border-width: 5px;
-  }
+ 
   .team-member img {
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -388,6 +391,7 @@ margin, position, padding-left, and font-size on .project-points li are not rele
   footer p {
     margin: 0;
   }
+
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
